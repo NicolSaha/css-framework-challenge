@@ -1,0 +1,26 @@
+{
+  "name": "css-framework-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "autoprefixer": "^9.8.4",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "postcss tailwind.css -o css/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolSaha/css-framework-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicolSaha/css-framework-challenge/issues"
+  },
+  "homepage": "https://github.com/NicolSaha/css-framework-challenge#readme"
+}
