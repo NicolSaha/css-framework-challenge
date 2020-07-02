@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="css/tailwind.css" />
     <title>Tailwind</title>
   </head>
-  <body class="bg-gray-500 mx-10 my-10 px-4">
-    <header class="">
+  <body>
+    <header class="bg-gray-400 w-auto h-screen px-10 py-10 z-0 border border-gray-400">
     
-      <div class="flex items-center justify-between font-sans">
+      <div class="flex items-center justify-between font-sans w-full h-auto">
         <button
           class="text-3xl flex bg-gray-700 text-white font-bold py-2 px-4 border border-transparent rounded text-center"
         >
@@ -19,35 +19,37 @@
       <ul class="text-xl flex justify-around list-none">
         <li>
           <button
-            class="bg-transparent hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full"
+            class="bg-transparent hover:bg-gray-700 text-white font-bold py-2 px-4 m-1 rounded-full"
           >
             SUPPORT
           </button>
         </li>
         <li>
           <button
-            class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full"
+            class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 m-1 rounded-full"
           >
             LOG IN
           </button>
         </li>
       </ul>
       </div>
-    
-      <div class="text-white w-1/2 px-4 py-20 mt-32">
-      <h1 class="font-serif text-5xl text-white leading-none">LOREM ipsul dolor sit amet consectet</h1>
-      <h2 class="text-xl mt-4">Sed pharetra eros a mmi aliquam et molestie mauris tincdunt. Phasellus uaculis.</h2>
+      
+    <div class="flex justify-center w-full lg:w-auto lg:justify-start p-10 ">
+      <div class="text-white w-full md:w-2/3 lg:w-1/2 px-4 mt-20 lg:mt-24">
+      <h1 class="font-serif text-white leading-none text-3xl sm:text-4xl md:text-4xl lg:text-5xl">LOREM ipsul dolor sit amet consectet</h1>
+      <h2 class="text-xl mt-4">Sed pharetra eros a mmi aliquam et molestie <br> mauris tincdunt. Phasellus uaculis.</h2>
       <p class="font-sans">
-        <ul class="text-sm list-disc ml-6">
+        <ul class="text-sm list-disc ml-6 mt-5">
           <li>Pellentesque habitant morbi tristique senectus</li>
           <li>Class aptent taciti sociosqu ad litora torquent per</li>
           <li>Fusce adipiscing erat vel dui tincidunt eget</li>
         </ul>
       </p>
- <ul class="flex justify-around m-4 w-full -ml-6">
+
+    <ul class="flex justify-start mt-8">
         <li>
           <button
-            class="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-full"
+            class="mr-10 bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-full"
           >
             MAIN CTA BUTTON
           </button>
@@ -61,12 +63,182 @@
         </li>
       </ul>
       </div>
+
+      <div class="hidden lg:block relative w-1/2 my-1">
+        <img class="absolute h-auto p-1 -mt-8" src="headerimg.png" alt="header vector">
+      </div>
+</div>
     </header>
 
-    <nav></nav>
+   <nav class="px-10 flex items-center justify-between  bg-white p-6 -mt-56 z-10 border border-gray-400">
+     <button
+          class="hidden md:flex text-sm md:text-xl bg-gray-700 text-white font-bold py-2 px-4 border border-transparent rounded text-center"
+        >
+          LOGO
+        </button>
+  <div class="flex justify-center w-full items-center lg:w-auto lg:justify-between lg:mr-32">
+    <div class="text-sm flex lg:flex-grow">
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-400 mr-4">
+        Overview
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-400 mr-4">
+        One-on-One
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-400 mr-4">
+        Testimonials
+      </a>
+      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-400 mr-4">
+        More
+      </a>
+    </div>
+    <div>
+        <button
+            class="hidden md:inline-flex bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-full -mr-40 md:-mr-10"
+          >
+            MAIN CTA BUTTON
+          </button>
+    </div>
+  </div>
+</nav>
 
-    <main></main>
+<!--OVERVIEW-->
+    <div class="bg-white pt-20 p-12 flex flex-col sm:grid sm:gap-4 grid-cols-1 grid-rows-1 sm:grid-flow-row md:grid-flow-row-dense lg:grid-flow-rows-dense xl:grid-flow-rows mb-10">
+<div class="flex px-10">
+      <div class="w-full sm:py-0 md:w-2/3 inline-block justify-center items-center text-left leading-2 h-auto">
+        <h3 class="text-red-600 font-sans text-base">Lorem ipsum dolor</h3>
+        <h3 class="text-blue-900 font-serif text-3xl py-2">Learn what you need to know</h3>
+        <p class="font-sans text-base">Lorem ipsum dolor sit amet, consectetur adipescing elit. Sed pharetra eros a mi aliquam et molestie mauris tincidunt. Phasellus iaculis faucibus nibh, lobortis hendrerit lectur porta eget.</p>
+      </div>
+      <div class="hidden md:inline-flex justify-center items-center sm:w-1/3 sm:justify-end"><img class="h-64" src="block1.png" alt="questions mark"></div>
+      </div>
+      
+      <div class="flex px-10">
+         <div class="hidden md:inline-flex justify-center items-center sm:w-1/3 sm:justify-start sm:-ml-9 sm:mr-20"><img class="h-64" src="block2.png" alt="class list"></div>
+      <div class="w-full mt-10 sm:py-0 md:w-2/3 inline-block justify-center items-center text-left leading-2 h-auto">
+        <h3 class="text-red-600 font-sans text-base" >Pellentesque habitant</h3>
+        <h3 class="text-blue-900 font-serif text-3xl py-2">Class aptent taciti sociousqe</h3>
+        <p class="font-sans text-base">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc non nunc augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaesos. Aenean imperdiet porta purus.</p>
+      </div>
+      </div>
 
-    <footer></footer>
+      <div class="flex px-10">
+      <div class="w-full mt-10 sm:py-0 md:w-2/3 inline-block justify-center items-center text-left leading-2 h-auto">
+        <h3 class="text-red-600 font-sans text-base">50 Point guarantee</h3>
+        <h3 class="text-blue-900 font-serif text-3xl py-2">A guarantee our competitors wouldn't dare to make</h3>
+        <p class="font-sans text-base">Nunc commodo ultrices tellus nec gravida. Mauris suscipit interdum velit ut rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce adipiscing erat vel dui tincidunt eget commodo arc fringilla.</p>
+      </div>
+      <div class="hidden md:inline-flex justify-center items-center sm:w-1/3 sm:justify-end"><img class="h-64" src="block3.png" alt="guarantee 50 points"></div>
+      </div>
+
+    </div>
+
+    <!--ONEONONE-->
+    <div class="border border-gray-400">
+<h1 class="text-4xl text-center text-gray-400 mt-10">One-on-One</h1>
+<div class="p-12 grid gap-4 grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 grid-flow-col sm:grid-flow-row md:grid-flow-row-dense lg:grid-flow-col-dense xl:grid-flow-col">
+   <div class="flex p-10">
+      <div class="sm:w-2/3 inline-block justify-center text-left leading-2 h-auto">
+        <h3 class="text-red-600 font-sans text-base">Conversational format</h3>
+        <h3 class="text-blue-900 font-serif text-2xl py-2">Dialogue with a tutor</h3>
+        <p class="font-sans text-base">Nunc commodo ultrices tellus nec gravida. Mauris suscipit interdum velit ut rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="hidden sm:flex w-1/3 inline-block justify-center"><img class="h-56" src="one1.png" alt="guarantee 50 points"></div>
+      </div>
+
+       <div class="flex p-10">
+      <div class="sm:w-2/3 inline-block justify-center text-left leading-2 h-auto">
+        <h3 class="text-red-600 font-sans text-base">Dashboard</h3>
+        <h3 class="text-blue-900 font-serif text-2xl py-2">Personalized support</h3>
+        <p class="font-sans text-base">Nunc commodo ultrices tellus nec gravida. Mauris suscipit interdum velit ut rutrum. Lorem ipsum dolor sit amet, sonsectetur adipescing elit.</p>
+      </div>
+      <div class="hidden sm:flex w-1/3 inline-block justify-center"><img class="h-56" src="one2.png" alt="guarantee 50 points"></div>
+      </div>
+
+       <div class="flex p-10">
+      <div class="sm:w-2/3 inline-block justify-center text-left leading-2 h-auto">
+        <h3 class="text-red-600 font-sans text-base">One-to-one tutor sessions</h3>
+        <h3 class="text-blue-900 font-serif text-2xl py-2">Keep track of your progress</h3>
+        <p class="font-sans text-base">Nunc commodo ultrices tellus nec gravida. Mauris suscipit interdum velit ut rutrum. Lorem ipsum dolor sit amet, sonsectetur adipescing elit.</p>
+      </div>
+      <div class="hidden sm:flex w-1/3 inline-block justify-center"><img class="h-56" src="one3.png" alt="guarantee 50 points"></div>
+      </div>
+      
+       <div class="flex p-10">
+      <div class="sm:w-2/3 inline-block justify-center text-left leading-2 h-auto">
+        <h3 class="text-red-600 font-sans text-base">Ask a tutor</h3>
+        <h3 class="text-blue-900 font-serif text-2xl py-2">Get answers from the experts</h3>
+        <p class="font-sans text-base">Nunc commodo ultrices tellus nec gravida. Mauris suscipit interdum velit ut rutrum. Lorem ipsum dolor sit amet, sonsectetur adipescing elit.</p>
+      </div>
+      <div class="hidden sm:flex w-1/3 inline-block justify-center"><img class="h-56" src="one4.png" alt="guarantee 50 points"></div>
+    </div>
+</div>
+    </div>
+
+  <!--TESTIMONIALS-->
+    <div class="mt-10 mb-10 px-10 ">
+<h1 class="text-4xl text-center text-gray-400">Testimonials</h1>
+<div class="p-12 grid gap-4 grid-cols-1 grid-rows-1 sm:grid-cols-1 sm:grid-rows-3 sm:grid-flow-row md:grid-cols-2 md:grid-rows-2 md:grid-flow-row-dense lg:grid-cols-3 lg:grid-rows-1 lg:grid-flow-col-dense xl:grid-flow-col font-sans text-center">
+<div>
+<img src="testimonial.png" alt="testimonial profile picture">
+<div>
+<h3 class="text-gray-700 text-lg">"Lorem ipsum dolor sit amet"</h3>
+<p class="text-gray-400 text-sm">John Doe. USA. 740 GMAT</p>
+</div>
+</div>
+
+<div class="">
+<img src="testimonial.png" alt="testimonial profile picture">
+<div>
+<h3 class="text-gray-700 text-lg">"Lorem ipsum dolor sit amet"</h3>
+<p class="text-gray-400 text-sm">John Doe. USA. 740 GMAT</p>
+</div>
+</div>
+
+<div class="">
+<img src="testimonial.png" alt="testimonial profile picture">
+<div>
+<h3 class="text-gray-700 text-lg">"Lorem ipsum dolor sit amet"</h3>
+<p class="text-gray-400 text-sm">John Doe. USA. 740 GMAT</p>
+</div>
+</div>
+</div>
+    </div>
+
+    <!--MORE-->
+     <div class="border border-gray-400 h-full">
+<h1 class="text-4xl text-center text-gray-400 mt-10">Wait, there's more!</h1>
+
+<div class="p-12 grid grid-cols-1 grid-rows-3 sm:grid-flow-row md:grid-flow-row-dense lg:grid-flow-row-dense xl:grid-flow-row h-full">
+  <div class="flex p-10">
+      <div class="md:w-2/3 inline-block justify-center text-left leading-2 md:mt-32">
+        <h3 class="text-red-600 font-sans text-base">Lorem ipsum dolor</h3>
+        <h3 class="text-blue-900 font-serif text-3xl py-2">Learn what you need to know</h3>
+        <p class="font-sans text-base pr-10">Lorem ipsum dolor sit amet, consectetur adipescing elit. Sed pharetra eros a mi aliquam et molestie mauris tincidunt. Phasellus iaculis faucibus nibh, lobortis hendrerit lectur porta eget.</p>
+      </div>
+      <div class="hidden md:inline-flex w-1/3 right-0"><img class="h-full" src="t1.png" alt="questions mark"></div>
+      </div>
+      
+  <div class="flex p-10">
+    <div class="hidden md:inline-flex w-1/3 justify-center "><img class="h-64" src="t2.png" alt="questions mark"></div>
+      <div class="md:w-2/3 inline-block justify-center text-left leading-2 md:mt-10">
+        <h3 class="text-red-600 font-sans text-base">Lorem ipsum dolor</h3>
+        <h3 class="text-blue-900 font-serif text-3xl py-2">Learn what you need to know</h3>
+        <p class="font-sans text-base pr-10">Lorem ipsum dolor sit amet, consectetur adipescing elit. Sed pharetra eros a mi aliquam et molestie mauris tincidunt. Phasellus iaculis faucibus nibh, lobortis hendrerit lectur porta eget.</p>
+      </div>
+       </div>
+      
+  <div class="flex p-10">
+    <div class="md:w-2/3 inline-block justify-center text-left leading-2">
+      <h3 class="text-red-600 font-sans text-base">Lorem ipsum dolor</h3>
+      <h3 class="text-blue-900 font-serif text-3xl py-2">Learn what you need to know</h3>
+      <p class="font-sans text-base pr-10">Lorem ipsum dolor sit amet, consectetur adipescing elit. Sed pharetra eros a mi aliquam et molestie mauris tincidunt. Phasellus iaculis faucibus nibh, lobortis hendrerit lectur porta eget.</p>
+    </div>
+  <div class="hidden md:inline-flex w-1/3 justify-center -mt-12"><img class="h-64" src="t3.png" alt="questions mark"></div>
+  </div>
+      
+</div>
+    </div>
+
+    <footer class="bg-gray-400 w-auto h-28 px-10 py-10 z-0 border border-gray-400 uppercase text-center"> Footer Material</footer>
   </body>
 </html>
