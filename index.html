@@ -7,7 +7,11 @@
     <title>Tailwind</title>
   </head>
   <body>
-    <header class="bg-gray-400 w-auto h-screen px-10 py-10 z-0 border border-gray-400">
+    <!--MAIN CONTAINER-->
+   <div class="box-border max-w-screen-lg m-auto border border-gray-400">
+
+    <!--HEADER-->
+    <header class="bg-gray-400 w-auto h-screen px-10 py-10 z-0 border-b border-gray-400">
     
       <div class="flex items-center justify-between font-sans w-full h-auto">
         <button
@@ -21,22 +25,22 @@
           <button
             class="bg-transparent hover:bg-gray-700 text-white font-bold py-2 px-4 m-1 rounded-full"
           >
-            SUPPORT
+            <a href="#">SUPPORT</a>
           </button>
         </li>
         <li>
           <button
             class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 m-1 rounded-full"
           >
-            LOG IN
+          <a href="#">LOG IN</a>
           </button>
         </li>
       </ul>
       </div>
       
-    <div class="flex justify-center w-full lg:w-auto lg:justify-start p-10 ">
-      <div class="text-white w-full md:w-2/3 lg:w-1/2 px-4 mt-20 lg:mt-24">
-      <h1 class="font-serif text-white leading-none text-3xl sm:text-4xl md:text-4xl lg:text-5xl">LOREM ipsul dolor sit amet consectet</h1>
+    <div class="w-full justify-center p-10 grid grid-cols-1 grid-rows-1 sm:grid-flow-row md:grid-flow-row-dense lg:grid-flow-rows-dense xl:grid-flow-rows ">
+      <div class="text-white w-full px-4 mt-48">
+      <h1 class="font-serif text-white leading-none text-3xl sm:text-4xl md:text-4xl lg:text-5xl">LOREM ipsul dolor <br> sit amet consectet</h1>
       <h2 class="text-xl mt-4">Sed pharetra eros a mmi aliquam et molestie <br> mauris tincdunt. Phasellus uaculis.</h2>
       <p class="font-sans">
         <ul class="text-sm list-disc ml-6 mt-5">
@@ -51,26 +55,27 @@
           <button
             class="mr-10 bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-full"
           >
-            MAIN CTA BUTTON
+           <a href="#">MAIN CTA BUTTON</a>
           </button>
         </li>
         <li>
           <button
             class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full"
           >
-            LEARN MORE
+            <a href="">LEARN MORE</a>
           </button>
         </li>
       </ul>
       </div>
 
-      <div class="hidden lg:block relative w-1/2 my-1">
-        <img class="absolute h-auto p-1 -mt-8" src="headerimg.png" alt="header vector">
+      <div class="hidden lg:block my-1">
+        <img class="h-auto p-1 -mt-8" src="headerimg.png" alt="header vector">
       </div>
 </div>
     </header>
 
-   <nav class="px-10 flex items-center justify-between  bg-white p-6 -mt-56 z-10 border border-gray-400">
+<!--NAVIGATION BAR-->
+   <nav class="px-10 flex items-center justify-between bg-white p-6 z-10 border-b border-t border-gray-400">
      <button
           class="hidden md:flex text-sm md:text-xl bg-gray-700 text-white font-bold py-2 px-4 border border-transparent rounded text-center"
         >
@@ -78,16 +83,16 @@
         </button>
   <div class="flex justify-center w-full items-center lg:w-auto lg:justify-between lg:mr-32">
     <div class="text-sm flex lg:flex-grow">
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-400 mr-4">
+      <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-400 mr-4">
         Overview
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-400 mr-4">
+      <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-400 mr-4">
         One-on-One
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-400 mr-4">
+      <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-400 mr-4">
         Testimonials
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-400 mr-4">
+      <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-400 mr-4">
         More
       </a>
     </div>
@@ -102,7 +107,7 @@
 </nav>
 
 <!--OVERVIEW-->
-    <div class="bg-white pt-20 p-12 flex flex-col sm:grid sm:gap-4 grid-cols-1 grid-rows-1 sm:grid-flow-row md:grid-flow-row-dense lg:grid-flow-rows-dense xl:grid-flow-rows mb-10">
+    <section class="bg-white pt-20 p-12 flex flex-col sm:grid sm:gap-4 grid-cols-1 grid-rows-1 sm:grid-flow-row md:grid-flow-row-dense lg:grid-flow-rows-dense xl:grid-flow-rows mb-10">
 <div class="flex px-10">
       <div class="w-full sm:py-0 md:w-2/3 inline-block justify-center items-center text-left leading-2 h-auto">
         <h3 class="text-red-600 font-sans text-base">Lorem ipsum dolor</h3>
@@ -130,10 +135,10 @@
       <div class="hidden md:inline-flex justify-center items-center sm:w-1/3 sm:justify-end"><img class="h-64" src="block3.png" alt="guarantee 50 points"></div>
       </div>
 
-    </div>
+    </section>
 
     <!--ONEONONE-->
-    <div class="border border-gray-400">
+    <section class="border-b border-t border-gray-400">
 <h1 class="text-4xl text-center text-gray-400 mt-10">One-on-One</h1>
 <div class="p-12 grid gap-4 grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 grid-flow-col sm:grid-flow-row md:grid-flow-row-dense lg:grid-flow-col-dense xl:grid-flow-col">
    <div class="flex p-10">
@@ -142,7 +147,7 @@
         <h3 class="text-blue-900 font-serif text-2xl py-2">Dialogue with a tutor</h3>
         <p class="font-sans text-base">Nunc commodo ultrices tellus nec gravida. Mauris suscipit interdum velit ut rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-      <div class="hidden sm:flex w-1/3 inline-block justify-center"><img class="h-56" src="one1.png" alt="guarantee 50 points"></div>
+      <div class="hidden sm:flex w-1/3 inline-block justify-center"><img class="h-40 m-8" src="one1.png" alt="guarantee 50 points"></div>
       </div>
 
        <div class="flex p-10">
@@ -151,7 +156,7 @@
         <h3 class="text-blue-900 font-serif text-2xl py-2">Personalized support</h3>
         <p class="font-sans text-base">Nunc commodo ultrices tellus nec gravida. Mauris suscipit interdum velit ut rutrum. Lorem ipsum dolor sit amet, sonsectetur adipescing elit.</p>
       </div>
-      <div class="hidden sm:flex w-1/3 inline-block justify-center"><img class="h-56" src="one2.png" alt="guarantee 50 points"></div>
+      <div class="hidden sm:flex w-1/3 inline-block justify-center"><img class="h-40 m-8" src="one2.png" alt="guarantee 50 points"></div>
       </div>
 
        <div class="flex p-10">
@@ -160,7 +165,7 @@
         <h3 class="text-blue-900 font-serif text-2xl py-2">Keep track of your progress</h3>
         <p class="font-sans text-base">Nunc commodo ultrices tellus nec gravida. Mauris suscipit interdum velit ut rutrum. Lorem ipsum dolor sit amet, sonsectetur adipescing elit.</p>
       </div>
-      <div class="hidden sm:flex w-1/3 inline-block justify-center"><img class="h-56" src="one3.png" alt="guarantee 50 points"></div>
+      <div class="hidden sm:flex w-1/3 inline-block justify-center"><img class="h-40 m-8" src="one3.png" alt="guarantee 50 points"></div>
       </div>
       
        <div class="flex p-10">
@@ -169,43 +174,39 @@
         <h3 class="text-blue-900 font-serif text-2xl py-2">Get answers from the experts</h3>
         <p class="font-sans text-base">Nunc commodo ultrices tellus nec gravida. Mauris suscipit interdum velit ut rutrum. Lorem ipsum dolor sit amet, sonsectetur adipescing elit.</p>
       </div>
-      <div class="hidden sm:flex w-1/3 inline-block justify-center"><img class="h-56" src="one4.png" alt="guarantee 50 points"></div>
+      <div class="hidden sm:flex w-1/3 inline-block justify-center"><img class="h-40 m-8" src="one4.png" alt="guarantee 50 points"></div>
     </div>
 </div>
-    </div>
+    </section>
 
   <!--TESTIMONIALS-->
-    <div class="mt-10 mb-10 px-10 ">
+    <section class="mt-10 px-10 border-b border-gray-400">
 <h1 class="text-4xl text-center text-gray-400">Testimonials</h1>
-<div class="p-12 grid gap-4 grid-cols-1 grid-rows-1 sm:grid-cols-1 sm:grid-rows-3 sm:grid-flow-row md:grid-cols-2 md:grid-rows-2 md:grid-flow-row-dense lg:grid-cols-3 lg:grid-rows-1 lg:grid-flow-col-dense xl:grid-flow-col font-sans text-center">
-<div>
+<div class="p-12 grid gap-3 grid-cols-1 grid-rows-1 sm:grid-cols-1 sm:grid-rows-3 sm:grid-flow-row md:grid-cols-2 md:grid-rows-2 md:grid-flow-row-dense lg:grid-cols-3 lg:grid-rows-1 lg:grid-flow-col-dense xl:grid-flow-col font-sans text-center justify-center">
+  <div>
 <img src="testimonial.png" alt="testimonial profile picture">
-<div>
 <h3 class="text-gray-700 text-lg">"Lorem ipsum dolor sit amet"</h3>
 <p class="text-gray-400 text-sm">John Doe. USA. 740 GMAT</p>
-</div>
 </div>
 
-<div class="">
-<img src="testimonial.png" alt="testimonial profile picture">
 <div>
+<img src="testimonial.png" alt="testimonial profile picture">
 <h3 class="text-gray-700 text-lg">"Lorem ipsum dolor sit amet"</h3>
 <p class="text-gray-400 text-sm">John Doe. USA. 740 GMAT</p>
-</div>
 </div>
 
-<div class="">
+<div>
 <img src="testimonial.png" alt="testimonial profile picture">
 <div>
 <h3 class="text-gray-700 text-lg">"Lorem ipsum dolor sit amet"</h3>
 <p class="text-gray-400 text-sm">John Doe. USA. 740 GMAT</p>
-</div>
 </div>
 </div>
     </div>
+    </section>
 
     <!--MORE-->
-     <div class="h-full">
+     <section class="h-full">
 <h1 class="text-4xl text-center text-gray-400 mt-10">Wait, there's more!</h1>
 
 <div class="p-12 grid grid-cols-1 grid-rows-3 sm:grid-flow-row md:grid-flow-row-dense lg:grid-flow-row-dense xl:grid-flow-row h-full">
@@ -237,11 +238,11 @@
   </div>
       
 </div>
-    </div>
+    </section>
 
      <!--CALL FOR ACTION-->
-<div class="block text-center my-16">
-     <hr class="border border-gray-20">
+<section class="block text-center my-16">
+     <hr class="border-t border-gray-20">
      <br>
      <button
             class="mt-8 mb-2 bg-red-600 hover:bg-red-800 text-white font-bold py-4 px-10 rounded-full"
@@ -249,9 +250,10 @@
             IT'S A REALLY BIG CTA
           </button>
           <p class="tracking-tighter font-sans text-base text-gray-500 font-medium" >Try it free for 7 days with no commitment</p>
-</div>
+</section>
+   </div>
 
-
-    <footer class="bg-gray-400 w-auto h-28 px-10 py-10 z-0 border border-gray-400 uppercase text-center"> Footer Material</footer>
+  <!--FOOTER-->
+    <footer class=" bg-gray-400 w-auto px-10 py-10 border-b border-t border-gray-400 uppercase text-center"> Footer Material</footer>
   </body>
 </html>
