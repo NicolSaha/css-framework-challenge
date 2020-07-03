@@ -10,6 +10,10 @@ Create a mock-up of 2 wireframe by using a framework of choice
 ## Framework
 - [Tailwind Framework](https://tailwindcss.com/)
 
+## Hosted on 
+
+- [Github Pages](https://nicolsaha.github.io/css-framework-challenge/)
+
 ### Open Sourced
 
 By [Nicol Saha :)](https://github.com/NicolSaha)
