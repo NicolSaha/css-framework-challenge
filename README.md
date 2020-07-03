@@ -7,6 +7,9 @@ Create a mock-up of 2 wireframe by using a framework of choice
 - [Exercise 1](https://wisecoding.github.io/css-framework-challenge/index.html)
 - [Exercise 2](https://wisecoding.github.io/css-framework-challenge/part2.html)
 
+## Framework
+- [Tailwind Framework](https://tailwindcss.com/)
+
 ### Open Sourced
 
 By [Nicol Saha :)](https://github.com/NicolSaha)
