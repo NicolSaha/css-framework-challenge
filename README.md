@@ -13,6 +13,7 @@ Create a mock-up of 2 wireframe by using a framework of choice
 ## Hosted on 
 
 - [Github Pages](https://nicolsaha.github.io/css-framework-challenge/)
+- [Netlify](https://css-framework-nicole.netlify.app/)
 
 ### Open Sourced
 
